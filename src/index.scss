@@ -1,4 +1,4 @@
-@import 'common';
+@import '_common';
 
 .wrapper {
   @include wrapper(60%, 400px, 5%);

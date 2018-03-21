@@ -1,4 +1,4 @@
-@import 'common';
+@import '_common';
 
 .wrapper {
   @include wrapper(90%, 400px, 0%);
@@ -10,6 +10,4 @@
   .guidelines {
     @extend %text-standard;
   }
-
 }
-
