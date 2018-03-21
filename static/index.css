@@ -26,7 +26,6 @@ div.social-container {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  grid-gap: 5px;
   width: 90%; }
   div.social-container div {
     height: 45px;
@@ -42,12 +41,7 @@ div.social-container {
     div.social-container div * {
       margin: 8px auto auto;
       font-family: 'Montserrat', sans-serif;
-      /*position: relative;
-      top: 5px;
-      left: 1px;*/
       background-color: transparent !important;
       border: none !important; }
-      div.social-container div *:hover {
-        background-color: transparent; }
     div.social-container div:hover {
       background-color: rgba(0, 0, 0, 0.6); }

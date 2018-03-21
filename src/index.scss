@@ -10,7 +10,6 @@ body {
 }
 
 .background {
-  //@include blur;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -37,9 +36,6 @@ div.social-container {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  //display: grid;
-  //grid-template-columns: repeat(1, 1fr);
-  grid-gap: 5px;
   width: 90%;
 
   div {
@@ -60,15 +56,8 @@ div.social-container {
     * {
       margin: 8px auto auto;
       font-family: 'Montserrat', sans-serif;
-      /*position: relative;
-      top: 5px;
-      left: 1px;*/
       background-color: transparent !important;
       border: none !important;
-
-      &:hover {
-        background-color: transparent;
-      }
     }
 
     transition: background-color 0.5s ease;
