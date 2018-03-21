@@ -1,5 +1,7 @@
+//global vars
 $text-color: #ffffffff;
 
+//fonts
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -16,18 +18,7 @@ $text-color: #ffffffff;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-body {
-  background-color: rgba(80, 90, 20, 0.7);
-}
-
-.background {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -3;
-}
+//commonly used mixins
 
 @mixin wrapper($width, $max-width, $margin-top) {
   display: block;
@@ -44,7 +35,59 @@ body {
   width: $width;
 }
 
+//commonly used extends
+
 %text-standard {
   font-family: 'Montserrat', sans-serif;
   color: $text-color;
+}
+
+%hardreset {
+  //resets color and border
+  border: none !important;
+  background-color: transparent !important;
+}
+
+%semitrans {
+  //slightly transparent
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+%transbutton {
+  @extend %semitrans;
+  @extend %text-standard;
+
+  //basic styling
+  border-radius: 30px;
+  border: solid 1px white;
+  text-align: center;
+  font-size: 1.2em;
+  cursor: pointer;
+
+  //transition
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  //children alignment
+  * {
+    @extend %hardreset;
+    margin: 8px 10px;
+  }
+}
+
+//commonly used SCSS
+
+body {
+  background-color: rgba(80, 90, 20, 0.7);
+}
+
+.background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -3;
 }
