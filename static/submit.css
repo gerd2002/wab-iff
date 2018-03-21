@@ -27,13 +27,13 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
-  width: 60%;
+  width: 90%;
   max-width: 400px; }
   .wrapper img#logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%; }
+    width: 53%; }
   .wrapper .guidelines {
-    font-family: 'Montserrat', sans-serif; }
+    font-family: 'Montserrat', sans-serif;
+    color: white; }
